@@ -1,0 +1,28 @@
+# 服务器配置
+server:
+  # 应用程序端口号
+  port: 8081
+
+# Spring相关配置
+spring:
+  # Redis配置
+  redis:
+    # Redis服务器地址
+    host: localhost
+    # Redis服务器端口
+    port: 6379
+    # Redis服务器密码（如果有的话）
+    password: 
+    # 使用的数据库索引，默认是0
+    database: 0
+    # Lettuce连接池配置（Lettuce是Redis的Java客户端）
+    lettuce:
+      pool:
+        # 连接池最大连接数
+        max-active: 8
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1ms
+        # 连接池中的最大空闲连接
+        max-idle: 8
+        # 连接池中的最小空闲连接
+        min-idle: 0 

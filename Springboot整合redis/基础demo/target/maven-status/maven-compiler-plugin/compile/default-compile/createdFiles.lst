@@ -1,0 +1,3 @@
+com/example/redis/RedisDemoApplication.class
+com/example/redis/controller/RedisController.class
+com/example/redis/config/RedisConfig.class
